@@ -61,10 +61,34 @@ category = "main"
 optional = false
 python-versions = ">=3.8"
 
+[[package]]
+name = "python-libnmap"
+version = "0.7.2"
+description = "Python NMAP library enabling you to start async nmap tasks, parse and compare/diff scan results"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+defusedxml = ["defusedxml (>=0.6.0)"]
+
+[[package]]
+name = "scapy"
+version = "2.4.5"
+description = "Scapy: interactive packet manipulation tool"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4"
+
+[package.extras]
+basic = ["ipython"]
+complete = ["ipython", "pyx", "cryptography (>=2.0)", "matplotlib"]
+docs = ["sphinx (>=3.0.0)", "sphinx_rtd_theme (>=0.4.3)", "tox (>=3.0.0)"]
+
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8.0,<3.9"
-content-hash = "cc4381c50d46cf8a4c15a70dba6fcea57a5b1bed5e7a99a29b8b88a3e6310fc3"
+content-hash = "c14bbcff84eb41320d27f06fbf920f827c83b1b4afa0f28a3ba76a43469641c7"
 
 [metadata.files]
 asyncio-dgram = [
@@ -107,4 +131,10 @@ numpy = [
     {file = "numpy-1.22.2-cp39-cp39-win_amd64.whl", hash = "sha256:59153979d60f5bfe9e4c00e401e24dfe0469ef8da6d68247439d3278f30a180f"},
     {file = "numpy-1.22.2-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:4a176959b6e7e00b5a0d6f549a479f869829bfd8150282c590deee6d099bbb6e"},
     {file = "numpy-1.22.2.zip", hash = "sha256:076aee5a3763d41da6bef9565fdf3cb987606f567cd8b104aded2b38b7b47abf"},
+]
+python-libnmap = [
+    {file = "python-libnmap-0.7.2.tar.gz", hash = "sha256:73309abebc49881adc312b85d7169bb567ac259948d2b1ce7b962e21bc5f98ea"},
+]
+scapy = [
+    {file = "scapy-2.4.5.tar.gz", hash = "sha256:bc707e3604784496b6665a9e5b2a69c36cc9fb032af4864b29051531b24c8593"},
 ]
